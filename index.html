@@ -4,22 +4,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script src="script.js" defer></script>
+    <title>KSJ Countdown</title>
+    <link href="/src/output.css" rel="stylesheet">
+    <link href="/src/input.css" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
-
-
+    <script src="script.js" defer></script>
+    <script src="/js/gsap.min.js" defer></script>
 </head>
 
 <body class="bg-gray-900 bg-repeat bg-center bg-blend-overlay" style="background-image: url(/src/ksj-bg.png)">
-    <div class="container mx-auto block p-96 justify-center text-center">
-        <p class="text-[#29fec6] text-2xl">Kim Seok Jin is coming home!</p>
+    <div class="container mx-auto block pt-96 justify-center text-center">
+        <p class="text-[#29fec6] text-4xl">Countdown to Jin's comback!</p>
         <div class="column-1 flex flex-row justify-center">
-            <p class="text-[#9338ff] text-2xl">Today is </p> <br>
             <p class="month text-[#9338ff] text-2xl"></p>
         </div>
+        <div class="box gradient-green"></div>
         <div class="column-1 flex flex-row justify-center">
-            <p class="timer text-[#9338ff]"></p>
+            <p class="timer"></p>
         </div>
     </div>
 </body>
