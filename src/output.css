@@ -588,9 +588,34 @@ video {
   }
 }
 
+.absolute {
+  position: absolute;
+}
+
+.relative {
+  position: relative;
+}
+
+.m-8 {
+  margin: 2rem;
+}
+
+.m-auto {
+  margin: auto;
+}
+
+.m-12 {
+  margin: 3rem;
+}
+
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
+}
+
+.mx-12 {
+  margin-left: 3rem;
+  margin-right: 3rem;
 }
 
 .block {
@@ -601,16 +626,83 @@ video {
   display: flex;
 }
 
+.grid {
+  display: grid;
+}
+
+.h-48 {
+  height: 12rem;
+}
+
+.min-h-screen {
+  min-height: 100vh;
+}
+
 .flex-row {
   flex-direction: row;
+}
+
+.place-content-evenly {
+  place-content: space-evenly;
+}
+
+.place-items-center {
+  place-items: center;
+}
+
+.content-center {
+  align-content: center;
+}
+
+.items-center {
+  align-items: center;
 }
 
 .justify-center {
   justify-content: center;
 }
 
-.pt-96 {
-  padding-top: 24rem;
+.bg-slate-400 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(148 163 184 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#28fec6\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(40 254 198 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#9439ff\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(148 57 255 / var(--tw-bg-opacity));
+}
+
+.bg-\[url\(\'\/src\/ksj-bg\.png\'\)\] {
+  background-image: url('/src/ksj-bg.png');
+}
+
+.bg-center {
+  background-position: center;
+}
+
+.bg-repeat {
+  background-repeat: repeat;
+}
+
+.p-8 {
+  padding: 2rem;
+}
+
+.p-5 {
+  padding: 1.25rem;
+}
+
+.p-12 {
+  padding: 3rem;
+}
+
+.pt-20 {
+  padding-top: 5rem;
 }
 
 .text-center {
@@ -652,10 +744,22 @@ video {
   color: rgb(243 188 255 / var(--tw-text-opacity));
 }
 
-body {
-  background-image: linear-gradient(
-      rgba(40, 20, 84, 0.9),
-      rgba(81, 9, 148, 0.9)
-    ),
-    url("/src/ksj-bg.png");
+.bg-blend-multiply {
+  background-blend-mode: multiply;
 }
+
+.bg-blend-overlay {
+  background-blend-mode: overlay;
+}
+
+.backdrop-blur-sm {
+  --tw-backdrop-blur: blur(4px);
+  -webkit-backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
+          backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
+}
+
+/* body {
+  background-color: linear-gradient(rgba(17, 7, 40, 0.3), rgba(28, 2, 52, 0.9));
+  background-image: url("/src/ksj-bg.png");
+}
+ */

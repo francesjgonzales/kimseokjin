@@ -2,10 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-  background-image: linear-gradient(
-      rgba(40, 20, 84, 0.9),
-      rgba(81, 9, 148, 0.9)
-    ),
-    url("/src/ksj-bg.png");
+/* body {
+  background-color: linear-gradient(rgba(17, 7, 40, 0.3), rgba(28, 2, 52, 0.9));
+  background-image: url("/src/ksj-bg.png");
 }
+ */
