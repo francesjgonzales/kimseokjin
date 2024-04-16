@@ -3,5 +3,9 @@
 @tailwind utilities;
 
 body {
-  background-color: rgb(17 24 39);
+  background-image: linear-gradient(
+      rgba(40, 20, 84, 0.9),
+      rgba(81, 9, 148, 0.9)
+    ),
+    url("/src/ksj-bg.png");
 }

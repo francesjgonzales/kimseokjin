@@ -11,9 +11,8 @@ document.querySelector(".month").innerHTML = `<p class="text-[#9338ff] text-2xl"
 /* const x = new Date
 const day = document.querySelector(".day").innerHTML = x.getDay() */
 
-
 // Set the date we're counting down to
-const countDownDate = new Date("June 2024 04:47:00").getTime();
+const countDownDate = new Date("June, 12 2024 00:00:00").getTime();
 
 // Update the count down every 1 second
 var x = setInterval(function () {
@@ -31,12 +30,12 @@ var x = setInterval(function () {
     var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
     // Output the result in an element with id="demo"
-    document.querySelector(".timer").innerHTML = `<p class="timer text-[#9338ff] text-5xl"> ${days}d  ${hours} h
+    document.querySelector(".timer").innerHTML = `<p"> ${days}d  ${hours} h
         ${minutes} m  ${seconds} s </p>`;
 
     // If the count down is over, write some text 
     if (distance < 0) {
         clearInterval(x);
-        document.querySelector(".timer").innerHTML = `<p class="timer text-[#9338ff] text-9xl">Welcome back, Jin!</p>`;
+        document.querySelector(".timer").innerHTML = `<p class="timer text-[#9338ff] text-9xl">Zaddy's home!</p>`;
     }
 }, 1000);
