@@ -30,8 +30,7 @@ var x = setInterval(function () {
     var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
     // Output the result in an element with id="demo"
-    document.querySelector(".timer").innerHTML = `<p"> ${days} d : ${hours} h :
-        ${minutes} m : ${seconds} s </p>`;
+    document.querySelector(".timer").innerHTML = `<p class="text-[#29fec6] text-6xl jersey-15-regular">Kim Seokjin will be coming home in <p class="text-[#f3bcff]">${days}</p> days!</p>`;
 
     // If the count down is over, write some text 
     if (distance < 0) {
