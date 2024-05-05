@@ -5,26 +5,187 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KSJ Countdown</title>
-    <link href="/src/output.css" rel="stylesheet">
-    <script src="script.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Jersey+15&display=swap" rel="stylesheet">
-    <!--     <script src="/js/gsap.min.js" defer></script>
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js" defer></script>
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/EaselPlugin.min.js" defer></script>
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/TextPlugin.min.js" defer></script> -->
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/Flip.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/TextPlugin.min.js"></script>
+    <script src="script.js" defer></script>
+
+    <link href="/src/output.css" rel="stylesheet">
 </head>
 
 <body class="bg-[#9439ff]">
 
-    <div class="container mx-auto block text-center justify-items-center p-9 m-40 h-96">
-        <div class="column-1 flex flex-row justify-center">
-            <p class="timer text-6xl sm:text-6xl text-[#f3bcff] jersey-15-regular"></p>
+    <div class="container sm:mx-auto mx-5 text-center justify-items-center py-9">
+        <div class="col-span-2">
+            <div class="column-1 flex flex-row justify-center pt-9 pb-12 ">
+                <p class="timer text-6xl sm:text-6xl text-[#f3bcff] jersey-15-regular"></p>
+            </div>
         </div>
-        <div class="box gradient-green pt-9 m-5">
-            <img class="w-full" src="/src/ksj-bg.png">
+        <div class="grid grid-cols-2 sm:grid-cols-4">
+            <div class="image1 col-span-1 container hover:bg-gradient-to-r from-emerald-500 to-cyan-500 content-center">
+                <img style="width:80%" src="/src/ksj-butter-nobg.png">
+            </div>
+            <div class="container hover:bg-gradient-to-r from-blue-500 to-sky-500 content-center"><img style="width:60%"
+                    src="/src/ksj-rj-nobg.png">
+            </div>
+            <div class="container hover:bg-gradient-to-r from-emerald-500 to-cyan-500 content-center"><img
+                    style="width:100%" src="/src/ksj-nobg.png"></div>
+            <div class="container hover:bg-gradient-to-r from-blue-500 to-sky-500 content-center"><img
+                    src="/src/ksj-squid-game.png">
+            </div>
+            <div class="container hover:bg-gradient-to-r from-emerald-500 to-cyan-500 content-center"><img
+                    style="width:80%" src="/src/ksj-ptd-nobg.png" alt=""></div>
+            <div class="col-span-1 container hover:bg-gradient-to-r from-emerald-500 to-cyan-500 content-center"><img
+                    style="width:80%" src="/src/ksj-ptd2-nobg.png" alt=""></div>
+            <div class="container hover:bg-gradient-to-r from-blue-500 to-sky-500 content-center"><img
+                    style="width:100%" src="/src/ksj-weverse.png" alt=""></div>
+            <div class="container hover:bg-gradient-to-r from-emerald-500 to-cyan-500 content-center"><img
+                    style="width:80%" src="/src/ksj-coat-nobg.png" alt=""></div>
         </div>
+
+
+        <p class="text-7xl text-green-300 jersey-15-regular pt-10">Jin's Video Messages</p>
+        <div class="grid grid-cols-2 sm:grid-cols-4">
+            <div>
+                <iframe class="grid content-center" width="100%" height="315"
+                    src="https://www.youtube.com/embed/lupA4JxKA-4?si=1fciOZyXO_wgUtDY" title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+                <p class="text-lg text-center text-amber-200 hover:underline decoration-wavy pt-5">[n월의 석진] Message
+                    from
+                    Jin : May 2024 💌</p>
+            </div>
+
+            <div>
+                <iframe width="100%" height="315" src="https://www.youtube.com/embed/loQTVVCJxhQ?si=OAP3MCv6Iukhobjh"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+                <p class="text-lg text-center text-amber-200 hover:underline decoration-wavy pt-5">[n월의 석진] Message
+                    from
+                    Jin : April 2024 💌</p>
+            </div>
+            <div>
+                <iframe width="100%" height="315" src="https://www.youtube.com/embed/p_zhC-MpRuY?si=-cCVjwcZdKW9tcGG"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+                <p class="text-lg text-center text-amber-200 hover:underline decoration-wavy pt-5">[n월의 석진] Message
+                    from
+                    Jin : Feb 2024 💌</p>
+            </div>
+            <div>
+                <iframe width="100%" height="315" src="https://www.youtube.com/embed/XQlJRwoaU_E?si=GQ7LliAC6m8Ltu4n"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+                <p class="text-lg text-center text-amber-200 hover:underline decoration-wavy pt-5">[n월의 석진] Message
+                    from
+                    Jin : Jan 2024 💌</p>
+            </div>
+            <div>
+                <iframe width="100%" height="315" src="https://www.youtube.com/embed/108aIlqAAE8?si=PKzVR7B2XMz9ww_Y"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+                <p class="text-lg text-center text-amber-200 hover:underline decoration-wavy pt-5">[n월의 석진] Message
+                    from
+                    Jin : Dec 2023 💌</p>
+            </div>
+            <div>
+                <iframe width="100%" height="315" src="https://www.youtube.com/embed/IVjMQ3ZjFJk?si=oO0UonbqXLtP3ou9"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+                <p class="text-lg text-center text-amber-200 hover:underline decoration-wavy pt-5">[n월의 석진] Message
+                    from
+                    Jin : Nov 2023 💌</p>
+            </div>
+            <div>
+                <iframe width="100%" height="315" src="https://www.youtube.com/embed/gwVU-AcAPvY?si=tBkmSQh_7NnOXf5x"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+                <p class="text-lg text-center text-amber-200 hover:underline decoration-wavy pt-5">[n월의 석진] Message
+                    from
+                    Jin : Sep 2023 💌</p>
+            </div>
+            <div>
+                <iframe width="100%" height="315" src="https://www.youtube.com/embed/EFsylxqLNWo?si=matuzA4_e_KMiVQV"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+                <p class="text-lg text-center text-amber-200 hover:underline decoration-wavy pt-5">[n월의 석진] Message
+                    from
+                    Jin : Jul 2023 💌</p>
+            </div>
+            <div>
+                <iframe width="100%" height="315" src="https://www.youtube.com/embed/9DO4yH7wriw?si=KrpP5QTuv9qiV1KO"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+                <p class="text-lg text-center text-amber-200 hover:underline decoration-wavy pt-5">[n월의 석진] Message
+                    from
+                    Jin : May 2023 💌</p>
+            </div>
+            <div>
+                <iframe width="100%" height="315" src="https://www.youtube.com/embed/FjmQmzdR9pQ?si=v-5TUagbIhXNRDlu"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+                <p class="text-lg text-center text-amber-200 hover:underline decoration-wavy pt-5">[n월의 석진] Message
+                    from
+                    Jin : April 2023 💌</p>
+            </div>
+            <div>
+                <iframe width="100%" height="315" src="https://www.youtube.com/embed/p_zhC-MpRuY?si=nfOb5ilGuyK3Gtwp"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+                <p class="text-lg text-center text-amber-200 hover:underline decoration-wavy pt-5">[n월의 석진] Message
+                    from
+                    Jin : March 2023 💌</p>
+            </div>
+            <div>
+                <iframe width="100%" height="315" src="https://www.youtube.com/embed/4fSLR9dY-EU?si=Dl9IBnTH6-wu38pT"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+                <p class="text-lg text-center text-amber-200 hover:underline decoration-wavy pt-5">[n월의 석진] Message
+                    from
+                    Jin : Feb 2023 💌</p>
+            </div>
+            <div>
+                <iframe width="100%" height="315" src="https://www.youtube.com/embed/qEKQpCiuw6o?si=Z2SOxJIFFzHCrHwO"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+                <p class="text-lg text-center text-amber-200 hover:underline decoration-wavy pt-5">[n월의 석진] Message
+                    from
+                    Jin : Jan 2023 💌</p>
+            </div>
+        </div>
+
+
     </div>
 
 </body>

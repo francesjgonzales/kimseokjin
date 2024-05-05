@@ -30,7 +30,9 @@ var x = setInterval(function () {
     var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
     // Output the result in an element with id="demo"
-    document.querySelector(".timer").innerHTML = `<p class="text-[#29fec6] text-6xl jersey-15-regular">Kim Seokjin will be coming home in <p class="text-[#f3bcff]">${days}</p> days!</p>`;
+    document.querySelector(".timer").innerHTML = `<p class="text-cyan-400 sm:text-9xl text-2lg">Jin Comback to 2024!<br><span class="text-yellow-300 text-9xl">D-${days}</span></p><br>
+    <p class="sm:text-9xl text-2lg hover:underline decoration-wavy text-emerald-300">${days}:${hours}:${minutes}:${seconds}</p>`;
+
 
     // If the count down is over, write some text 
     if (distance < 0) {
@@ -38,3 +40,32 @@ var x = setInterval(function () {
         document.querySelector(".timer").innerHTML = `<p class="timer text-[#9338ff] text-9xl">Zaddy's home!</p>`;
     }
 }, 1000);
+
+/* document.querySelector(".image2").onclick = () => tween.play(); */
+/* gsap.registerPlugin(TextPlugin)
+gsap.to('.timer', {
+    duration: 2,
+    text: "This is the new text",
+    ease: "none",
+}); */
+
+/* gsap.to('.image1', {
+    y: 100,
+    duration: 5,
+    x: 50,
+    delay: 2
+}) */
+
+
+/* */
+
+let tween = gsap.to(".image2", {
+    duration: 5,
+    delay: 2,
+    ease: "elastic.out(1,0.3)",
+    y: -250
+});
+
+
+
+
